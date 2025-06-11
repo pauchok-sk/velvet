@@ -1,0 +1,145 @@
+.header-line {
+  padding: 14px 0px;
+  background-color: var(--black);
+  color: white;
+  &__container {
+    @include flex-between;
+    gap: 30px;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 56px;
+    @include laptop-min {
+      gap: 32px;
+    }
+    @include tablet {
+      gap: 24px;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    a {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      transition: opacity 0.2s ease;
+      @include hover {
+        opacity: 0.7;
+      }
+    }
+    span {
+      @include tablet {
+        display: none;
+      }
+    }
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+.header-mob-location {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  height: 100%;
+  max-height: 0px;
+  overflow: hidden;
+
+  transition: max-height 0.4s ease;
+
+  &._open {
+    max-height: 75px;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(17, 17, 17, 0.2);
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+.header {
+  padding: 16px 0px;
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 56px;
+    @include laptop-middle {
+      gap: 32px;
+    }
+  }
+  &__logo {
+    display: block;
+    width: 155px;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+  &__nav {
+    flex-shrink: 0;
+    @include laptop-min {
+      display: none;
+    }
+  }
+  &__list {
+    display: flex;
+    gap: 24px;
+
+    a {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 150%;
+      transition: color 0.2s ease;
+      @include hover {
+        color: var(--primary);
+      }
+    }
+  }
+  &__contacts {
+    @include laptop-min {
+      display: none;
+    }
+  }
+  &__burger-btn {
+    display: none;
+    margin-left: auto;
+    @include laptop-min {
+      @include flex-center;
+      width: 32px;
+      height: 32px;
+    }
+
+    svg {
+      width: 24px;
+      height: 18px;
+    }
+  }
+}
+
+.header-contacts-mobile {
+  display: none;
+  @include laptop-min {
+    display: block;
+  }
+
+  &__contacts {
+    @include flex-between
+  }
+}

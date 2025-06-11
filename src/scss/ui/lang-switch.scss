@@ -1,0 +1,21 @@
+.lang-switch {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+  &__btn {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+
+    transition: opacity 0.2s ease;
+    @include hover {
+      opacity: 0.7;
+    }
+  }
+  &__separator {
+    width: 2px;
+    height: 22px;
+    background-color: currentColor;
+  }
+}
