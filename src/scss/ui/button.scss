@@ -38,14 +38,26 @@
   cursor: pointer;
   width: fit-content;
   max-width: 100%;
+  border: 1px solid var(--primary);
 
   font-weight: 600;
   font-size: 16px;
   line-height: 150%;
   color: white;
 
-  transition: background-color .2s ease;
+  transition: background-color .2s ease, border-color .2s ease;
   @include hover {
     background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+  }
+
+  &._outline {
+    background-color: transparent;
+    color: var(--primary);
+
+    @include hover {
+      color: white;
+      background-color: var(--primary-dark);
+    }
   }
 }

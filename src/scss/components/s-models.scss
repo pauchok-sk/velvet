@@ -1,0 +1,21 @@
+.s-models {
+  overflow: hidden;
+  &__slider {
+    overflow: visible !important;
+
+    .card-model {
+      width: 325px !important;
+      @include mobile {
+        width: 335px !important;
+      }
+    }
+  }
+  &__catalog-btn {
+    width: 275px;
+    max-width: 100%;
+    margin: 32px auto 0px auto;
+    @include mobile {
+      width: 100%;
+    }
+  }
+}
