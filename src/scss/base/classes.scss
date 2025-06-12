@@ -1,0 +1,43 @@
+.sect-m {
+  margin: 56px 0px;
+}
+.sect-p {
+  padding: 56px 0px;
+}
+
+.content {
+  margin: 0;
+  font-size: 16px;
+  line-height: 150%;
+
+  @include tablet {
+    font-size: 15px;
+  }
+
+  p {
+    margin: 0;
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.sect-head {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 40px;
+  @include tablet {
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .s-title {
+    margin: 0 !important;
+    flex: 1; 
+  }
+  .content {
+    margin: 0;
+    flex: 1;
+  }
+}

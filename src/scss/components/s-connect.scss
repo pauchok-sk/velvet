@@ -1,0 +1,39 @@
+.s-connect {
+  position: relative;
+  color: white;
+  z-index: 1;
+  margin-top: 40px !important;
+
+  @include tablet {
+    &::before {
+      position: absolute;
+      content: "";
+      inset: 0;
+      background-color: black;
+      opacity: 0.7;
+      z-index: -1;
+    }
+  }
+  &__body {
+    max-width: 510px;
+  }
+  &__title {
+    font-size: 40px;
+    line-height: 120%;
+    margin-bottom: 16px;
+    @include tablet {
+      font-size: 32px;
+      line-height: 125%;
+    }
+  }
+  &__content {
+    font-weight: 600;
+    @include tablet {
+      font-weight: 400;
+    }
+  }
+  &__form {
+    margin-top: 32px;
+    max-width: 380px;
+  }
+}

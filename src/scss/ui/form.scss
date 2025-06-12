@@ -1,0 +1,46 @@
+.input-control {
+  position: relative;
+  width: 100%;
+  margin-bottom: 16px;
+}
+.input {
+  padding: 14px 20px;
+  border: none;
+  backdrop-filter: blur(9px);
+  background: linear-gradient(
+    51deg,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.2) 100%
+  );
+  border-radius: 4px;
+  outline: none;
+  width: 100%;
+
+  font-size: 16px;
+  line-height: 125%;
+  color: white;
+
+  &::placeholder {
+    color: white;
+  }
+}
+.form-btn {
+  width: 100%;
+  margin-top: 24px;
+}
+
+.form-policy {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 133%;
+  max-width: 500px;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 16px 0px 0px 0px;
+
+  a {
+    color: white;
+    @include hover {
+      text-decoration: underline;
+    }
+  }
+}
