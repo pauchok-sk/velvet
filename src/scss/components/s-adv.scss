@@ -1,0 +1,40 @@
+.s-adv {
+  color: white;
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    @include laptop-middle {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include tablet {
+      grid-template-columns: 1fr;
+    }
+
+    li {
+      padding: 16px;
+      backdrop-filter: blur(12px);
+      border-radius: 4px;
+      background: linear-gradient(
+        51deg,
+        rgba(255, 255, 255, 0.2) 0%,
+        rgba(255, 255, 255, 0.2) 100%
+      );
+
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 120%;
+      @include tablet {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 147%;
+      }
+    }
+  }
+  &__btn {
+    margin-top: 40px;
+    @include mobile {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.modal {
+  display: none;
+  padding: 30px !important;
+  width: 650px !important;
+  max-width: calc(100% - 40px);
+  @include tablet {
+    padding: 20px 15px !important;
+  }
+  &__title {
+    font-family: "Lora", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 125%;
+    margin: 0px 0px 30px 0px;
+  }
+  &__form {
+    width: 100%;
+  }
+}

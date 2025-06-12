@@ -1,0 +1,42 @@
+.s-offer {
+  background-color: var(--black);
+  color: white;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    @include laptop-min {
+      align-items: center;
+      flex-direction: column-reverse;
+    }
+  }
+  &__info {
+    align-self: flex-end;
+    padding-bottom: 40px;
+    flex: 0 1 585px;
+    border-bottom: 1px solid white;
+    @include laptop-min {
+      flex: none;
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+  }
+  &__title {
+    margin-bottom: 32px;
+  }
+  &__btn {
+    margin-top: 40px;
+    @include mobile {
+      width: 100%;
+    }
+  }
+  &__img {
+    display: block;
+    height: auto;
+    object-fit: cover;
+    width: 480px;
+    border-radius: 4px;
+    margin-top: auto;
+    flex-shrink: 0;
+  }
+}

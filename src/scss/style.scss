@@ -17,9 +17,11 @@
 @import "./ui/form";
 @import "./ui/card-model";
 @import "./ui/slider";
+@import "./ui/card-service";
 
 // widgets
 @import "./widgets/burger";
+@import "./widgets/modal";
 
 // components
 @import "./components/header";
@@ -29,5 +31,8 @@
 @import "./components/s-about";
 @import "./components/s-atmosphere";
 @import "./components/s-models";
+@import "./components/s-adv";
+@import "./components/s-services";
+@import "./components/s-offer";
 
 @import "./components/footer";

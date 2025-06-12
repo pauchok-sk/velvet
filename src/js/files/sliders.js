@@ -11,6 +11,9 @@ export default function sliders() {
         el: ".s-models .slider-scrollbar",
         draggable: true,
       },
+      autoplay: {
+        delay: 3000
+      },
       breakpoints: {
         480: {
           slidesPerView: "auto",

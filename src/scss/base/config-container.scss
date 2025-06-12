@@ -1,7 +1,11 @@
 :root {
   --content-width: 1195px;
+  --content-width-big: 1360px;
   --offset-width: 20px;
   --container-width: calc(var(--content-width) + (var(--offset-width) * 2));
+  --container-width-big: calc(
+    var(--content-width-big) + (var(--offset-width) * 2)
+  );
 }
 
 .container {
@@ -9,4 +13,8 @@
   width: 100%;
   padding: 0 var(--offset-width);
   margin: 0 auto;
+
+  &._big {
+    max-width: var(--container-width-big);
+  }
 }
