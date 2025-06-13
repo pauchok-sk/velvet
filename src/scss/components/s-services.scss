@@ -4,9 +4,12 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
     @include laptop-middle {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @include laptop-min {
       grid-template-columns: repeat(2, 1fr);
     }
-    @include tablet {
+    @include tablet-min {
       grid-template-columns: 1fr;
     }
   }

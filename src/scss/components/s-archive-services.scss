@@ -1,0 +1,45 @@
+.s-archive-services {
+  &__head {
+    @include flex-between;
+    gap: 32px;
+    margin-bottom: 56px;
+    @include laptop-min {
+      flex-wrap: wrap;
+    }
+  }
+  &__head-info {
+    flex: 0 1 580px;
+    @include laptop-min {
+      flex: none;
+      width: 100%;
+    }
+  }
+  &__title {
+    margin-bottom: 24px;
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 30px;
+    row-gap: 40px;
+    @include laptop-min {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include tablet-min {
+      grid-template-columns: 1fr;
+    }
+
+    .card-service {
+      grid-column: 2 span;
+      &:last-child {
+        grid-column: 3 span;
+      }
+      @include last(2) {
+        grid-column: 3 span;
+      }
+      @include laptop-min {
+       grid-column: 1 span !important; 
+      }
+    }
+  }
+}

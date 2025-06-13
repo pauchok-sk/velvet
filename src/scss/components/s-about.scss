@@ -1,5 +1,8 @@
 .s-about {
-  &__container {
+  &__title {
+    margin-bottom: 32px;
+  }
+  &__wrapper {
     display: flex;
     justify-content: space-between;
     gap: 32px;
@@ -7,10 +10,15 @@
       align-items: start;
       flex-wrap: wrap;
     }
+
+    &._reverse {
+      flex-direction: row-reverse;
+    }
   }
   &__img {
     width: 480px;
     height: 450px;
+    border-radius: 4px;
     object-fit: cover;
     @include laptop-min {
       aspect-ratio: 1/1;
