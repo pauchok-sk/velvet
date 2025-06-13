@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>pauchoo0k</title>
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&_v=20250613160028" rel="stylesheet" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20250613160028" />
+	<link rel="stylesheet" href="./files/css/fancybox.min.css?_v=20250613160028">
+	<link rel="stylesheet" href="./files/css/swiper.min.css?_v=20250613160028">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body class="body">
+	<div class="header-line">
+		<div class="container header-line__container">
+			<ul class="list header-line__list">
+				<li id="header-mob-location-btn">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-location"></use>
+					</svg>
+					<span>Москва, Садовническая ул., 14 стр.2</span>
+				</li>
+				<li>
+					<a href="mailto:velvet.vip@yandex.ru">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-mail"></use>
+						</svg>
+						<span>velvet.vip@yandex.ru</span>
+					</a>
+				</li>
+			</ul>
+			<div class="lang-switch">
+				<a href="#" class="lang-switch__btn">RU</a>
+				<div class="lang-switch__separator"></div>
+				<a href="#" class="lang-switch__btn">EN</a>
+			</div>
+		</div>
+	</div>
+	<div class="header-mob-location" id="header-mob-location">
+		<div class="container">
+			<div class="header-mob-location__row">
+				<svg>
+					<use xlink:href="img/icons/icons.svg#icon-location"></use>
+				</svg>
+				<span>Москва, Садовническая ул., 14 стр.2</span>
+			</div>
+		</div>
+	</div>
+	<header class="header">
+		<div class="container header__container">
+			<a href="/" class="header__logo">
+				<img src="img/logo.svg" alt="logo" />
+			</a>
+			<nav class="header__nav">
+				<ul class="list header__list">
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Услуги</a></li>
+					<li><a href="#">Каталог</a></li>
+					<li><a href="#">Работа</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</nav>
+			<div class="header__contacts contacts">
+				<div class="contacts__socials">
+					<a href="#" target="_blank" class="btn-rect">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-tg"></use>
+						</svg>
+					</a>
+					<a href="#" target="_blank" class="btn-rect">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-wh"></use>
+						</svg>
+					</a>
+				</div>
+				<div class="show-tel">
+					<a href="tel:+79175084405" class="show-tel__btn">+7 (917) 508-44-05</a>
+					<div class="btn-rect">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-eye"></use>
+						</svg>
+					</div>
+				</div>
+			</div>
+			<div class="header__burger-btn" id="burger-open">
+				<svg>
+					<use xlink:href="img/icons/icons.svg#icon-burger"></use>
+				</svg>
+			</div>
+		</div>
+	</header>
+	<div class="header-contacts-mobile">
+		<div class="container">
+			<div class="header-contacts-mobile__contacts contacts">
+				<div class="contacts__socials">
+					<a href="#" target="_blank" class="btn-rect">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-tg"></use>
+						</svg>
+					</a>
+					<a href="#" target="_blank" class="btn-rect">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-wh"></use>
+						</svg>
+					</a>
+				</div>
+				<div class="show-tel">
+					<a href="tel:+79175084405" class="show-tel__btn">+7 (917) 508-44-05</a>
+					<div class="btn-rect">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-eye"></use>
+						</svg>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="burger-overlay" id="burger-overlay"></div>
+	<div class="burger" id="burger">
+		<div class="burger__head">
+			<a href="/" class="burger__logo">
+				<img src="img/logo.svg" alt="logo" />
+			</a>
+			<div class="burger__btn-close" id="burger-close">
+				<svg>
+					<use xlink:href="img/icons/icons.svg#icon-close"></use>
+				</svg>
+			</div>
+		</div>
+		<ul class="list burger__list">
+			<li><a href="#">Главная</a></li>
+			<li><a href="#">Услуги</a></li>
+			<li><a href="#">Каталог</a></li>
+			<li><a href="#">Работа</a></li>
+			<li><a href="#">Контакты</a></li>
+		</ul>
+		<ul class="list burger__contacts-list">
+			<li>
+				<svg>
+					<use xlink:href="img/icons/icons.svg#icon-location"></use>
+				</svg>
+				<span>Москва, Садовническая ул., 14 стр.2</span>
+			</li>
+			<li>
+				<a href="mailto:velvet.vip@yandex.ru">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-mail"></use>
+					</svg>
+					<span>velvet.vip@yandex.ru</span>
+				</a>
+			</li>
+		</ul>
+		<div class="burger__contacts contacts">
+			<div class="contacts__socials">
+				<a href="#" target="_blank" class="btn-rect">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-tg"></use>
+					</svg>
+				</a>
+				<a href="#" target="_blank" class="btn-rect">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-wh"></use>
+					</svg>
+				</a>
+			</div>
+			<div class="show-tel">
+				<a href="tel:+79175084405" class="show-tel__btn">+7 (917) 508-44-05</a>
+				<div class="btn-rect">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-eye"></use>
+					</svg>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<main>
+
+		<section class="intro sect-m">
+			<div class="container">
+				<div class="sect-head">
+					<h1 class="s-title">Работа для девушек в эскорте в Москве</h1>
+					<p class="content">Престижная и высокооплачиваемая работа в эскорте от агентства «ВЕЛЬВЕТ» — ваш шанс обрести финансовую независимость и стиль жизни, о котором вы мечтали. Присоединяйтесь, и мы поможем вам построить успешную карьеру в мире элитного сопровождения.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="s-connect sect-m sect-p" style="background: url(&quot;img/connect.jpg&quot;) center / cover no-repeat">
+			<div class="container">
+				<div class="s-connect__body">
+					<h2 class="s-title s-connect__title">
+						Напишем первыми <br />
+						в WhatsApp за 60 секунд
+					</h2>
+					<p class="content s-connect__content">
+						Мы никогда не пишем первыми — оставляя номер в этой форме, вы сами
+						инициируете первое сообщение.
+					</p>
+					<form action="#" class="s-connect__form">
+						<div class="input-control">
+							<input type="text" placeholder="Имя" class="input" />
+						</div>
+						<div class="input-control">
+							<input type="tel" placeholder="+7 (___) ___-__-__" class="input" />
+						</div>
+						<button class="btn-s form-btn">Напишите мне в WhatsApp</button>
+					</form>
+					<p class="form-policy">
+						Нажимая на кнопку «Напишите мне в WhatsApp», даю согласие на
+						<a href="#" target="_blank">обработку персональных данных</a> в рамках
+						<a href="#">политики конфиденциальности</a>
+					</p>
+				</div>
+			</div>
+		</section>
+		<section class="s-posibility sect-m">
+			<div class="container s-posibility__container">
+				<img src="img/posibility.jpg" alt="image" class="s-posibility__img" />
+				<div class="s-posibility__info">
+					<ul class="list s-posibility__list">
+						<li>Безграничные возможности для личного роста</li>
+						<li>Стабильная высокая зарплата от 700 000руб/месяц</li>
+						<li>Индивидуально составленный график</li>
+						<li>100% конфиденциальности и безопасности</li>
+						<li>Дополнительно оплачиваемые командировки за границу</li>
+						<li>
+							Оплата тренингов, фитнес-зала, СПА, салонов красоты, фотосессий и
+							всего прочего нужного для повышения квалификации
+						</li>
+					</ul>
+					<p class="content">
+						<strong>
+							Отдельно хотим отметить, что сотрудничество с нашим агентством
+							сопровождается гарантией полной безопасности и сохранением
+							конфиденциальности для сотрудниц.</strong>
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="s-work sect-m">
+			<div class="container">
+				<h2 class="s-title">Работа в элитном эскорт агентстве Velvet</h2>
+				<div class="s-work__wrapper">
+					<div class="s-work__info">
+						<div class="content">
+							<p>
+								Если Вы желаете получить работу в элитном эскорт агентстве, то
+								можете считать, что Вам выпал золотой билет, ведь Вы можете уже
+								сейчас стать нашей сотрудницей. Агентство «ВЕЛЬВЕТ» всегда открыто к
+								новым взаимовыгодным сотрудничествам с девушками и профессиональными
+								моделями, желающими работать в сфере VIP эскорт услуг. К тому же, мы
+								предлагаем самые привлекательные условия, в сравнении с другими
+								агентствами в Москве.
+							</p>
+							<p>
+								Еще одним нашим несомненным плюсом является то, что для каждой
+								модели предусмотрено индивидуальное составление графика работы от 1
+								до 8 часов в день. Это говорит о том, что у Вас будет достаточно
+								свободного времени, чтобы работать, а также всесторонне развиваться,
+								получать высшее образование и спокойно заниматься личными делами.
+								Причем, стабильно высокий доход в размере от 700 000 рублей в месяц,
+								Вы начнете получать уже с первого месяца трудоустройства, независимо
+								от того, какой график у Вас будет - полный или частичный.
+							</p>
+						</div>
+						<a href="#" class="btn-s s-work__btn">Заполнить анкету</a>
+					</div>
+					<img src="img/work.jpg" alt="image" class="s-work__img">
+				</div>
+			</div>
+		</section>
+
+
+	</main>
+	<div class="modal" id="modal-order">
+		<h3 class="modal__title">Заказать эскорт</h3>
+		<form action="#" class="modal__form">
+			<div class="input-control">
+				<input type="text" placeholder="Имя" class="input-outline" />
+			</div>
+			<div class="input-control">
+				<input type="tel" placeholder="+7 (___) ___-__-__" class="input-outline" />
+			</div>
+			<button class="btn-s form-btn">Отправить</button>
+		</form>
+		<p class="form-policy">
+			Нажимая на кнопку «Отправить», даю согласие на
+			<a href="#" target="_blank">обработку персональных данных</a> в рамках
+			<a href="#">политики конфиденциальности</a>
+		</p>
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__head">
+				<a href="/" class="footer__logo">
+					<img src="img/logo.svg" alt="logo" />
+				</a>
+				<a href="#modal-order" data-fancybox class="btn-s footer__head-btn">Заказать эскорт</a>
+				<ul class="list footer__list">
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Услуги</a></li>
+					<li><a href="#">Цены</a></li>
+					<li><a href="#">Каталог</a></li>
+					<li><a href="#">Работа</a></li>
+					<li><a href="#">Подробная анкета</a></li>
+					<li><a href="#">Контакты</a></li>
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#">Отзывы</a></li>
+					<li><a href="#">Об агентстве</a></li>
+				</ul>
+			</div>
+			<div class="footer__contacts-wrapper">
+				<ul class="list footer__contacts-list">
+					<li>
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-location"></use>
+						</svg>
+						<span>Москва, Садовническая ул., 14 стр.2</span>
+					</li>
+					<li>
+						<a href="mailto:velvet.vip@yandex.ru">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-mail"></use>
+							</svg>
+							<span>velvet.vip@yandex.ru</span>
+						</a>
+					</li>
+				</ul>
+				<div class="contacts footer__contacts">
+					<div class="contacts__socials">
+						<a href="#" target="_blank" class="btn-rect">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-tg"></use>
+							</svg>
+						</a>
+						<a href="#" target="_blank" class="btn-rect">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-wh"></use>
+							</svg>
+						</a>
+					</div>
+					<div class="show-tel">
+						<a href="tel:+79175084405" class="show-tel__btn">+7 (917) 508-44-05</a>
+						<div class="btn-rect">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-eye"></use>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<ul class="list footer__bottom-list">
+					<li><a href="#">Отказ от услуги или ее замена</a></li>
+					<li><a href="#">Оплата</a></li>
+					<li><a href="#">Возврат</a></li>
+				</ul>
+				<div class="content footer__company-info">
+					ООО «ВЕЛЬВЕТ» ОГРН: 1554130802751 ИНН: 6458270955 КПП: 645711307
+				</div>
+				<div class="footer__policy">
+					<h5 class="footer__policy-title">Для государственных органов</h5>
+					<p class="content">
+						Агентство «ВЕЛЬВЕТ» не предоставляет услуги интимного характера,
+						только услуги в сфере элитных знакомств по ОКВЭД 93.05. Все знакомства
+						происходят при обоюдном согласии сторон. При отправлении формы
+						обратной связи, вы соглашаетесь с политикой конфиденциальности сайта.
+					</p>
+				</div>
+				<div class="footer__copyright">© 2022-2025 velvet.vip</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="./files/js/inputmask.min.js?_v=20250613160028"></script>
+	<script src="./files/js/fancybox.min.js?_v=20250613160028"></script>
+	<script src="./files/js/swiper.min.js?_v=20250613160028"></script>
+
+	<script src="js/app.min.js?_v=20250613160028"></script>
+</body>
+
+</html>
