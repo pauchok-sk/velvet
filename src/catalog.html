@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  @@include('html/head.html',{ "title":"pauchoo0k" })
+  <body class="body">
+    @@include('html/components/header.html')
+    <main>
+      
+      @@include('html/components/intro.html', { "title":"Каталог моделей агентства Velvet", "content": "Добро пожаловать в каталог эскорт-моделей агентства «ВЕЛЬВЕТ» — здесь вас ждут роскошные девушки для ярких и незабываемых встреч. Выберите ту, кто украсит ваше мероприятие и оставит после него только лучшие впечатления." })
+      @@include('html/components/s-connect.html')
+      @@include('html/components/s-catalog.html')
+      @@include('html/components/s-elite.html')
+      @@include('html/components/s-selection.html')
+      <section
+        class="s-adv sect-m sect-p"
+        style="background: url(&quot;@img/adv-2.jpg&quot;) center / cover no-repeat"
+      >
+        <div class="container">
+          <h2 class="s-title">Главные плюсы нашего агентства это:</h2>
+          <ul class="list s-adv__list">
+            <li>Большой каталог моделей и девушек различных типажей</li>
+            <li>Девушки доступны для выезда по всей России и за её пределы.</li>
+            <li>Оперативный подбор по персональным критериям</li>
+            <li>Самые эффективные модели Москвы и СНГ</li>
+            <li>Индивидуальный подход к каждому клиенту</li>
+            <li>Много эксклюзивных вариантов</li>
+          </ul>
+          <a href="#modal-order" data-fancybox class="btn-s s-adv__btn">Цена на услуги моделей от 999$</a>
+        </div>
+      </section>
+      <section class="s-key sect-m">
+        <div class="container">
+          <p class="s-key__content">
+            Напомним, что каждая девушка подбирается исключительно по индивидуальному запросу клиента. Поэтому, мы гарантируем, что Вы будете на 100% удовлетворены результатом и новым приятным знакомством.
+          </p>
+        </div>
+      </section>
+      <section class="s-offer sect-p">
+        <div class="container s-offer__container">
+          <div class="s-offer__info">
+            <h2 class="s-title s-offer__title">Эксклюзивные кандидатки и медийные личности</h2>
+            <div class="content">
+              <p>
+                С агентством «ВЕЛЬВЕТ» эксклюзивно сотрудничают многие медийные личности и актрисы, популярные блогерши из TikTok и Instagram, фотомодели, певицы, танцовщицы, спортсменки, балерины, близняшки, а также иностранки и многие другие девушки и модели.
+              </p>
+              <p>Именно поэтому, при поиске особы, которая смогла бы преобразить важное мероприятие, а также добавить Вашему образу солидности и подарить головокружительные эмоции, мы советуем обращаться только к нам.</p>
+            </div>
+            <a href="#" class="btn-s s-offer__btn">Все эскорт услуги</a>
+          </div>
+          <img src="@img/exclusive.jpg" alt="image" class="s-offer__img" />
+        </div>
+      </section>
+
+    </main>
+    @@include('html/components/modals.html')
+    @@include('html/components/footer.html')
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

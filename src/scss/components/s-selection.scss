@@ -1,0 +1,16 @@
+.s-selection {
+  &__container {
+    @include flex-between;
+    gap: 30px;
+    @include laptop-min {
+      flex-wrap: wrap;
+    }
+  }
+  &__info {
+    flex: 0 1 580px;
+    @include laptop-min {
+      flex: none;
+      width: 100%;
+    }
+  }
+}

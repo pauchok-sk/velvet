@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>pauchoo0k</title>
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&_v=20250613141452" rel="stylesheet" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20250613141452" />
+	<link rel="stylesheet" href="./files/css/fancybox.min.css?_v=20250613141452">
+	<link rel="stylesheet" href="./files/css/swiper.min.css?_v=20250613141452">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body class="body">
+	<div class="header-line">
+		<div class="container header-line__container">
+			<ul class="list header-line__list">
+				<li id="header-mob-location-btn">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-location"></use>
+					</svg>
+					<span>Москва, Садовническая ул., 14 стр.2</span>
+				</li>
+				<li>
+					<a href="mailto:velvet.vip@yandex.ru">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-mail"></use>
+						</svg>
+						<span>velvet.vip@yandex.ru</span>
+					</a>
+				</li>
+			</ul>
+			<div class="lang-switch">
+				<a href="#" class="lang-switch__btn">RU</a>
+				<div class="lang-switch__separator"></div>
+				<a href="#" class="lang-switch__btn">EN</a>
+			</div>
+		</div>
+	</div>
+	<div class="header-mob-location" id="header-mob-location">
+		<div class="container">
+			<div class="header-mob-location__row">
+				<svg>
+					<use xlink:href="img/icons/icons.svg#icon-location"></use>
+				</svg>
+				<span>Москва, Садовническая ул., 14 стр.2</span>
+			</div>
+		</div>
+	</div>
+	<header class="header">
+		<div class="container header__container">
+			<a href="/" class="header__logo">
+				<img src="img/logo.svg" alt="logo" />
+			</a>
+			<nav class="header__nav">
+				<ul class="list header__list">
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Услуги</a></li>
+					<li><a href="#">Каталог</a></li>
+					<li><a href="#">Работа</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</nav>
+			<div class="header__contacts contacts">
+				<div class="contacts__socials">
+					<a href="#" target="_blank" class="btn-rect">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-tg"></use>
+						</svg>
+					</a>
+					<a href="#" target="_blank" class="btn-rect">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-wh"></use>
+						</svg>
+					</a>
+				</div>
+				<div class="show-tel">
+					<a href="tel:+79175084405" class="show-tel__btn">+7 (917) 508-44-05</a>
+					<div class="btn-rect">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-eye"></use>
+						</svg>
+					</div>
+				</div>
+			</div>
+			<div class="header__burger-btn" id="burger-open">
+				<svg>
+					<use xlink:href="img/icons/icons.svg#icon-burger"></use>
+				</svg>
+			</div>
+		</div>
+	</header>
+	<div class="header-contacts-mobile">
+		<div class="container">
+			<div class="header-contacts-mobile__contacts contacts">
+				<div class="contacts__socials">
+					<a href="#" target="_blank" class="btn-rect">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-tg"></use>
+						</svg>
+					</a>
+					<a href="#" target="_blank" class="btn-rect">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-wh"></use>
+						</svg>
+					</a>
+				</div>
+				<div class="show-tel">
+					<a href="tel:+79175084405" class="show-tel__btn">+7 (917) 508-44-05</a>
+					<div class="btn-rect">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-eye"></use>
+						</svg>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="burger-overlay" id="burger-overlay"></div>
+	<div class="burger" id="burger">
+		<div class="burger__head">
+			<a href="/" class="burger__logo">
+				<img src="img/logo.svg" alt="logo" />
+			</a>
+			<div class="burger__btn-close" id="burger-close">
+				<svg>
+					<use xlink:href="img/icons/icons.svg#icon-close"></use>
+				</svg>
+			</div>
+		</div>
+		<ul class="list burger__list">
+			<li><a href="#">Главная</a></li>
+			<li><a href="#">Услуги</a></li>
+			<li><a href="#">Каталог</a></li>
+			<li><a href="#">Работа</a></li>
+			<li><a href="#">Контакты</a></li>
+		</ul>
+		<ul class="list burger__contacts-list">
+			<li>
+				<svg>
+					<use xlink:href="img/icons/icons.svg#icon-location"></use>
+				</svg>
+				<span>Москва, Садовническая ул., 14 стр.2</span>
+			</li>
+			<li>
+				<a href="mailto:velvet.vip@yandex.ru">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-mail"></use>
+					</svg>
+					<span>velvet.vip@yandex.ru</span>
+				</a>
+			</li>
+		</ul>
+		<div class="burger__contacts contacts">
+			<div class="contacts__socials">
+				<a href="#" target="_blank" class="btn-rect">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-tg"></use>
+					</svg>
+				</a>
+				<a href="#" target="_blank" class="btn-rect">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-wh"></use>
+					</svg>
+				</a>
+			</div>
+			<div class="show-tel">
+				<a href="tel:+79175084405" class="show-tel__btn">+7 (917) 508-44-05</a>
+				<div class="btn-rect">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-eye"></use>
+					</svg>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<main>
+
+		<section class="intro sect-m">
+			<div class="container">
+				<div class="sect-head">
+					<h1 class="s-title">Каталог моделей агентства Velvet</h1>
+					<p class="content">Добро пожаловать в каталог эскорт-моделей агентства «ВЕЛЬВЕТ» — здесь вас ждут роскошные девушки для ярких и незабываемых встреч. Выберите ту, кто украсит ваше мероприятие и оставит после него только лучшие впечатления.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="s-connect sect-m sect-p" style="background: url(&quot;img/connect.jpg&quot;) center / cover no-repeat">
+			<div class="container">
+				<div class="s-connect__body">
+					<h2 class="s-title s-connect__title">
+						Напишем первыми <br />
+						в WhatsApp за 60 секунд
+					</h2>
+					<p class="content s-connect__content">
+						Мы никогда не пишем первыми — оставляя номер в этой форме, вы сами
+						инициируете первое сообщение.
+					</p>
+					<form action="#" class="s-connect__form">
+						<div class="input-control">
+							<input type="text" placeholder="Имя" class="input" />
+						</div>
+						<div class="input-control">
+							<input type="tel" placeholder="+7 (___) ___-__-__" class="input" />
+						</div>
+						<button class="btn-s form-btn">Напишите мне в WhatsApp</button>
+					</form>
+					<p class="form-policy">
+						Нажимая на кнопку «Напишите мне в WhatsApp», даю согласие на
+						<a href="#" target="_blank">обработку персональных данных</a> в рамках
+						<a href="#">политики конфиденциальности</a>
+					</p>
+				</div>
+			</div>
+		</section>
+		<section class="s-catalog">
+			<div class="container">
+				<div class="sect-head">
+					<h2 class="s-title">
+						ТОП эскортницы <br />
+						Москвы
+					</h2>
+					<p class="content">
+						Только в нашем каталоге — широкий выбор лучших эскорт-моделей Москвы.
+						Каждая девушка уникальна: от утончённой классической внешности до
+						дерзкой сексуальности, от скромного нрава до полной раскованности. Вы
+						легко подберёте идеальный образ под любое настроение и событие.
+					</p>
+				</div>
+			</div>
+			<div class="container _big">
+				<div class="s-catalog__grid">
+					<div class="card-model">
+						<div class="card-model__gallery">
+							<img src="img/model.jpg" alt="image" />
+							<div class="card-model__new">
+								<span>Новая модель </span>
+							</div>
+						</div>
+						<div class="card-model__body">
+							<h5 class="card-model__title">Вика</h5>
+							<ul class="list card-model__list">
+								<li>Рост: 165</li>
+								<li>Возраст: 25</li>
+								<li>Вес: 52</li>
+							</ul>
+							<a href="#" class="btn-s card-model__btn">Смотреть анкету</a>
+						</div>
+					</div>
+					<div class="card-model">
+						<div class="card-model__gallery">
+							<img src="img/model.jpg" alt="image" />
+							<div class="card-model__new">
+								<span>Новая модель </span>
+							</div>
+						</div>
+						<div class="card-model__body">
+							<h5 class="card-model__title">Вика</h5>
+							<ul class="list card-model__list">
+								<li>Рост: 165</li>
+								<li>Возраст: 25</li>
+								<li>Вес: 52</li>
+							</ul>
+							<a href="#" class="btn-s card-model__btn">Смотреть анкету</a>
+						</div>
+					</div>
+					<div class="card-model">
+						<div class="card-model__gallery">
+							<img src="img/model.jpg" alt="image" />
+							<div class="card-model__new">
+								<span>Новая модель </span>
+							</div>
+						</div>
+						<div class="card-model__body">
+							<h5 class="card-model__title">Вика</h5>
+							<ul class="list card-model__list">
+								<li>Рост: 165</li>
+								<li>Возраст: 25</li>
+								<li>Вес: 52</li>
+							</ul>
+							<a href="#" class="btn-s card-model__btn">Смотреть анкету</a>
+						</div>
+					</div>
+					<div class="card-model">
+						<div class="card-model__gallery">
+							<img src="img/model.jpg" alt="image" />
+							<div class="card-model__new">
+								<span>Новая модель </span>
+							</div>
+						</div>
+						<div class="card-model__body">
+							<h5 class="card-model__title">Вика</h5>
+							<ul class="list card-model__list">
+								<li>Рост: 165</li>
+								<li>Возраст: 25</li>
+								<li>Вес: 52</li>
+							</ul>
+							<a href="#" class="btn-s card-model__btn">Смотреть анкету</a>
+						</div>
+					</div>
+					<div class="card-model">
+						<div class="card-model__gallery">
+							<img src="img/model.jpg" alt="image" />
+							<div class="card-model__new">
+								<span>Новая модель </span>
+							</div>
+						</div>
+						<div class="card-model__body">
+							<h5 class="card-model__title">Вика</h5>
+							<ul class="list card-model__list">
+								<li>Рост: 165</li>
+								<li>Возраст: 25</li>
+								<li>Вес: 52</li>
+							</ul>
+							<a href="#" class="btn-s card-model__btn">Смотреть анкету</a>
+						</div>
+					</div>
+					<div class="card-model">
+						<div class="card-model__gallery">
+							<img src="img/model.jpg" alt="image" />
+							<div class="card-model__new">
+								<span>Новая модель </span>
+							</div>
+						</div>
+						<div class="card-model__body">
+							<h5 class="card-model__title">Вика</h5>
+							<ul class="list card-model__list">
+								<li>Рост: 165</li>
+								<li>Возраст: 25</li>
+								<li>Вес: 52</li>
+							</ul>
+							<a href="#" class="btn-s card-model__btn">Смотреть анкету</a>
+						</div>
+					</div>
+					<div class="card-model">
+						<div class="card-model__gallery">
+							<img src="img/model.jpg" alt="image" />
+							<div class="card-model__new">
+								<span>Новая модель </span>
+							</div>
+						</div>
+						<div class="card-model__body">
+							<h5 class="card-model__title">Вика</h5>
+							<ul class="list card-model__list">
+								<li>Рост: 165</li>
+								<li>Возраст: 25</li>
+								<li>Вес: 52</li>
+							</ul>
+							<a href="#" class="btn-s card-model__btn">Смотреть анкету</a>
+						</div>
+					</div>
+					<div class="card-model">
+						<div class="card-model__gallery">
+							<img src="img/model.jpg" alt="image" />
+							<div class="card-model__new">
+								<span>Новая модель </span>
+							</div>
+						</div>
+						<div class="card-model__body">
+							<h5 class="card-model__title">Вика</h5>
+							<ul class="list card-model__list">
+								<li>Рост: 165</li>
+								<li>Возраст: 25</li>
+								<li>Вес: 52</li>
+							</ul>
+							<a href="#" class="btn-s card-model__btn">Смотреть анкету</a>
+						</div>
+					</div>
+					<div class="card-model">
+						<div class="card-model__gallery">
+							<img src="img/model.jpg" alt="image" />
+							<div class="card-model__new">
+								<span>Новая модель </span>
+							</div>
+						</div>
+						<div class="card-model__body">
+							<h5 class="card-model__title">Вика</h5>
+							<ul class="list card-model__list">
+								<li>Рост: 165</li>
+								<li>Возраст: 25</li>
+								<li>Вес: 52</li>
+							</ul>
+							<a href="#" class="btn-s card-model__btn">Смотреть анкету</a>
+						</div>
+					</div>
+					<div class="card-model">
+						<div class="card-model__gallery">
+							<img src="img/model.jpg" alt="image" />
+							<div class="card-model__new">
+								<span>Новая модель </span>
+							</div>
+						</div>
+						<div class="card-model__body">
+							<h5 class="card-model__title">Вика</h5>
+							<ul class="list card-model__list">
+								<li>Рост: 165</li>
+								<li>Возраст: 25</li>
+								<li>Вес: 52</li>
+							</ul>
+							<a href="#" class="btn-s card-model__btn">Смотреть анкету</a>
+						</div>
+					</div>
+					<div class="card-model">
+						<div class="card-model__gallery">
+							<img src="img/model.jpg" alt="image" />
+							<div class="card-model__new">
+								<span>Новая модель </span>
+							</div>
+						</div>
+						<div class="card-model__body">
+							<h5 class="card-model__title">Вика</h5>
+							<ul class="list card-model__list">
+								<li>Рост: 165</li>
+								<li>Возраст: 25</li>
+								<li>Вес: 52</li>
+							</ul>
+							<a href="#" class="btn-s card-model__btn">Смотреть анкету</a>
+						</div>
+					</div>
+					<div class="card-model">
+						<div class="card-model__gallery">
+							<img src="img/model.jpg" alt="image" />
+							<div class="card-model__new">
+								<span>Новая модель </span>
+							</div>
+						</div>
+						<div class="card-model__body">
+							<h5 class="card-model__title">Вика</h5>
+							<ul class="list card-model__list">
+								<li>Рост: 165</li>
+								<li>Возраст: 25</li>
+								<li>Вес: 52</li>
+							</ul>
+							<a href="#" class="btn-s card-model__btn">Смотреть анкету</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="s-elite sect-m">
+			<div class="container s-elite__container">
+				<img src="img/service.jpg" alt="image" class="s-elite__img" />
+				<div class="s-elite__info">
+					<p class="content">
+						Элитные модели нашего агентства гармонично впишутся в любую атмосферу
+						Вашего VIP мероприятия, бизнес встречи, LUXURY выставки или светского
+						приема. Ведь они способны очаровать Вас не только своей красотой, но и
+						личными качествами, которые не оставят никого равнодушными.
+					</p>
+					<a href="#modal-order" data-fancybox class="btn-s s-elite__btn">Заказать эскорт</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="s-selection sect-m">
+			<div class="container s-selection__container">
+				<div class="s-selection__info">
+					<h2 class="s-title">Подбор эскорт девушки по персональным критериям</h2>
+					<div class="content">
+						<p>
+							Если клиент имеет конкретный образ модели и желает найти особу
+							полностью соответствующую ему, то мы можем предоставить подбор эскорт
+							девушки по персональным критериям. Эта услуга позволит Вам получить
+							именно то, что Вы ищете, поскольку опытный менеджер учтет все
+							пожелания и оперативно подберет Ваш идеал. Кстати, можно выбрать самые
+							разные параметры, ведь в нашем агентстве есть девушки на любой вкус.
+						</p>
+						<p>
+							Обращаясь к нам Вы можете полностью быть уверены в успешном проведении
+							предстоящего события.
+						</p>
+					</div>
+				</div>
+				<a href="//github.com/mediaelement/mediaelement-files/blob/master/big_buck_bunny.mp4?raw=true" data-fancybox class="video">
+					<img src="img/video.jpg" alt="image" />
+					<div class="video__play">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-play"></use>
+						</svg>
+					</div>
+				</a>
+			</div>
+		</section>
+
+		<section class="s-adv sect-m sect-p" style="background: url(&quot;img/adv-2.jpg&quot;) center / cover no-repeat">
+			<div class="container">
+				<h2 class="s-title">Главные плюсы нашего агентства это:</h2>
+				<ul class="list s-adv__list">
+					<li>Большой каталог моделей и девушек различных типажей</li>
+					<li>Девушки доступны для выезда по всей России и за её пределы.</li>
+					<li>Оперативный подбор по персональным критериям</li>
+					<li>Самые эффективные модели Москвы и СНГ</li>
+					<li>Индивидуальный подход к каждому клиенту</li>
+					<li>Много эксклюзивных вариантов</li>
+				</ul>
+				<a href="#modal-order" data-fancybox class="btn-s s-adv__btn">Цена на услуги моделей от 999$</a>
+			</div>
+		</section>
+		<section class="s-key sect-m">
+			<div class="container">
+				<p class="s-key__content">
+					Напомним, что каждая девушка подбирается исключительно по индивидуальному запросу клиента. Поэтому, мы гарантируем, что Вы будете на 100% удовлетворены результатом и новым приятным знакомством.
+				</p>
+			</div>
+		</section>
+		<section class="s-offer sect-p">
+			<div class="container s-offer__container">
+				<div class="s-offer__info">
+					<h2 class="s-title s-offer__title">Эксклюзивные кандидатки и медийные личности</h2>
+					<div class="content">
+						<p>
+							С агентством «ВЕЛЬВЕТ» эксклюзивно сотрудничают многие медийные личности и актрисы, популярные блогерши из TikTok и Instagram, фотомодели, певицы, танцовщицы, спортсменки, балерины, близняшки, а также иностранки и многие другие девушки и модели.
+						</p>
+						<p>Именно поэтому, при поиске особы, которая смогла бы преобразить важное мероприятие, а также добавить Вашему образу солидности и подарить головокружительные эмоции, мы советуем обращаться только к нам.</p>
+					</div>
+					<a href="#" class="btn-s s-offer__btn">Все эскорт услуги</a>
+				</div>
+				<img src="img/exclusive.jpg" alt="image" class="s-offer__img" />
+			</div>
+		</section>
+
+	</main>
+	<div class="modal" id="modal-order">
+		<h3 class="modal__title">Заказать эскорт</h3>
+		<form action="#" class="modal__form">
+			<div class="input-control">
+				<input type="text" placeholder="Имя" class="input-outline" />
+			</div>
+			<div class="input-control">
+				<input type="tel" placeholder="+7 (___) ___-__-__" class="input-outline" />
+			</div>
+			<button class="btn-s form-btn">Отправить</button>
+		</form>
+		<p class="form-policy">
+			Нажимая на кнопку «Отправить», даю согласие на
+			<a href="#" target="_blank">обработку персональных данных</a> в рамках
+			<a href="#">политики конфиденциальности</a>
+		</p>
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__head">
+				<a href="/" class="footer__logo">
+					<img src="img/logo.svg" alt="logo" />
+				</a>
+				<a href="#modal-order" data-fancybox class="btn-s footer__head-btn">Заказать эскорт</a>
+				<ul class="list footer__list">
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Услуги</a></li>
+					<li><a href="#">Цены</a></li>
+					<li><a href="#">Каталог</a></li>
+					<li><a href="#">Работа</a></li>
+					<li><a href="#">Подробная анкета</a></li>
+					<li><a href="#">Контакты</a></li>
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#">Отзывы</a></li>
+					<li><a href="#">Об агентстве</a></li>
+				</ul>
+			</div>
+			<div class="footer__contacts-wrapper">
+				<ul class="list footer__contacts-list">
+					<li>
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-location"></use>
+						</svg>
+						<span>Москва, Садовническая ул., 14 стр.2</span>
+					</li>
+					<li>
+						<a href="mailto:velvet.vip@yandex.ru">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-mail"></use>
+							</svg>
+							<span>velvet.vip@yandex.ru</span>
+						</a>
+					</li>
+				</ul>
+				<div class="contacts footer__contacts">
+					<div class="contacts__socials">
+						<a href="#" target="_blank" class="btn-rect">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-tg"></use>
+							</svg>
+						</a>
+						<a href="#" target="_blank" class="btn-rect">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-wh"></use>
+							</svg>
+						</a>
+					</div>
+					<div class="show-tel">
+						<a href="tel:+79175084405" class="show-tel__btn">+7 (917) 508-44-05</a>
+						<div class="btn-rect">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-eye"></use>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<ul class="list footer__bottom-list">
+					<li><a href="#">Отказ от услуги или ее замена</a></li>
+					<li><a href="#">Оплата</a></li>
+					<li><a href="#">Возврат</a></li>
+				</ul>
+				<div class="content footer__company-info">
+					ООО «ВЕЛЬВЕТ» ОГРН: 1554130802751 ИНН: 6458270955 КПП: 645711307
+				</div>
+				<div class="footer__policy">
+					<h5 class="footer__policy-title">Для государственных органов</h5>
+					<p class="content">
+						Агентство «ВЕЛЬВЕТ» не предоставляет услуги интимного характера,
+						только услуги в сфере элитных знакомств по ОКВЭД 93.05. Все знакомства
+						происходят при обоюдном согласии сторон. При отправлении формы
+						обратной связи, вы соглашаетесь с политикой конфиденциальности сайта.
+					</p>
+				</div>
+				<div class="footer__copyright">© 2022-2025 velvet.vip</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="./files/js/inputmask.min.js?_v=20250613141452"></script>
+	<script src="./files/js/fancybox.min.js?_v=20250613141452"></script>
+	<script src="./files/js/swiper.min.js?_v=20250613141452"></script>
+
+	<script src="js/app.min.js?_v=20250613141452"></script>
+</body>
+
+</html>

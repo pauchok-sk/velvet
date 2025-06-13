@@ -1,0 +1,35 @@
+.s-elite {
+  &__container {
+    @include flex-between;
+    gap: 32px;
+    @include laptop-min {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  &__img {
+    display: block;
+    border-radius: 4px;
+    width: 480px;
+    height: 350px;
+    object-fit: cover;
+    flex-shrink: 0;
+    @include tablet-min {
+      height: auto;
+      aspect-ratio: 1/1;
+    }
+  }
+  &__info {
+    flex: 0 1 580px;
+    @include laptop-min {
+      flex: none;
+      width: 100%;
+    }
+  }
+  &__btn {
+    margin-top: 32px;
+    @include mobile {
+      width: 100%;
+    }
+  }
+}
