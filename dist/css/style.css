@@ -918,10 +918,14 @@ body {
 }
 .s-adv__list {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(6,1fr);
   gap: 30px
 }
+.s-adv__list._last-big li:last-child {
+  grid-column: 4 span
+}
 .s-adv__list li {
+  grid-column: 2 span;
   padding: 16px;
   backdrop-filter: blur(12px);
   border-radius: 4px;
@@ -1004,6 +1008,9 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 140%
+}
+.s-key__content._max {
+  max-width: 890px
 }
 .s-catalog__grid {
   display: grid;
@@ -1109,6 +1116,21 @@ body {
   -o-object-fit: cover;
   object-fit: cover;
   display: block
+}
+.s-descr__container {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px
+}
+.s-descr__content {
+  flex: 0 1 580px
+}
+.s-descr__img {
+  width: 480px;
+  height: 144px;
+  border-radius: 4px;
+  -o-object-fit: cover;
+  object-fit: cover
 }
 .footer {
   padding: 56px 0
@@ -1220,7 +1242,7 @@ body {
     gap: 32px
   }
   .s-adv__list {
-    grid-template-columns: repeat(2,1fr)
+    grid-template-columns: repeat(4,1fr)
   }
   .s-services__wrapper {
     grid-template-columns: repeat(3,1fr)
@@ -1347,6 +1369,14 @@ body {
     height: auto;
     aspect-ratio: 1/1
   }
+  .s-descr__container {
+    flex-direction: column-reverse;
+    align-items: center
+  }
+  .s-descr__content {
+    flex: none;
+    width: 100%
+  }
 }
 @media (max-width:767px) {
   .content {
@@ -1392,10 +1422,14 @@ body {
   .s-adv__list {
     grid-template-columns: 1fr
   }
+  .s-adv__list._last-big li:last-child {
+    grid-column: 1 span
+  }
   .s-adv__list li {
     font-weight: 400;
     font-size: 15px;
-    line-height: 147%
+    line-height: 147%;
+    grid-column: 1 span
   }
   .s-key__content {
     font-weight: 400;

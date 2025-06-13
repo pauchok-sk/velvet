@@ -1,0 +1,25 @@
+.s-descr {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+
+    @include laptop-min {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  }
+  &__content {
+    flex: 0 1 580px;
+    @include laptop-min {
+      flex: none;
+      width: 100%;
+    }
+  }
+  &__img {
+    width: 480px;
+    height: 144px;
+    border-radius: 4px;
+    object-fit: cover;
+  }
+}
