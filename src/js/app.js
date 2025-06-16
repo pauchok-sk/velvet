@@ -5,6 +5,7 @@ import headerMobLocation from "./files/headerMobLocation.js";
 import headerScroll from "./files/headerScroll.js";
 import inputmask from "./files/inputmask.js";
 import map from "./files/map.js";
+import mediaAdaptive from "./files/mediaAdaptive.js";
 import showTel from "./files/showTel.js";
 import sliders from "./files/sliders.js";
 import spoller from "./files/spoller.js";
@@ -20,5 +21,6 @@ headerScroll();
 map();
 fileChange();
 validateForms();
+mediaAdaptive();
 
 Fancybox.bind("[data-fancybox]", {});

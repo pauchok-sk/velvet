@@ -1,0 +1,81 @@
+.s-pay {
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    gap: 40px;
+    @include laptop-min {
+      flex-direction: column-reverse;
+    }
+  }
+  &__info-body {
+    flex: 0 1 580px;
+    @include laptop-min {
+      flex: none;
+      width: 100%;
+    }
+  }
+  &__item {
+    padding: 24px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 2px 9px 1px rgba(0, 0, 0, 0.15);
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+      @include tablet {
+        margin-bottom: 40px;
+      }
+    }
+  }
+  &__item-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    font-size: 16px;
+    line-height: 150%;
+
+    @include tablet {
+      font-size: 15px;
+      line-height: 147%;
+    }
+  }
+  &__item-title {
+    font-weight: 600;
+    font-family: "Lora", sans-serif;
+    font-size: 32px;
+    line-height: 100%;
+    margin: 0px 0px 24px 0px;
+    @include tablet {
+      font-size: 24px;
+      line-height: 117%;
+    }
+  }
+  &__icon {
+    display: block;
+    margin-top: 24px;
+  }
+  &__img {
+    display: block;
+    border-radius: 4px;
+    width: 480px;
+    height: auto;
+    object-fit: cover;
+    @include laptop-min {
+      aspect-ratio: 1/1;
+      margin: 0 auto;
+    }
+    @include tablet {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__row-content {
+    flex: 0 1 580px;
+    @include laptop-min {
+      flex: none;
+      width: 100%;
+    }
+  }
+}
