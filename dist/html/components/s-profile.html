@@ -1,0 +1,41 @@
+<section class="s-profile">
+	<div class="container">
+		<div class="s-profile__body">
+			<h2 class="s-title">Анкета</h2>
+			<form action="#" class="s-profile__form" id="profile-form">
+				<h3 class="s-profile__form-title">Ваши данные</h3>
+				<div class="s-profile__wrapper">
+					<div class="input-control">
+						<input type="text" placeholder="Как к вам обращаться" id="profile-name" name="Имя" class="input _white" />
+					</div>
+					<div class="input-control">
+						<input type="number" name="Возраст" id="profile-age" placeholder="Укажите ваш возраст" class="input _white" />
+					</div>
+					<div class="input-control">
+						<input type="tel" placeholder="Оставьте ваш телефон" id="profile-tel" class="input _white" name="Телефон" />
+					</div>
+					<div class="input-control">
+						<input type="text" name="Город" id="profile-city" placeholder="Ваш город проживания" class="input _white" />
+					</div>
+				</div>
+				<div class="s-profile__footer">
+					<div class="s-profile__nav">
+						<h3 class="s-profile__form-title">Ваше фото</h3>
+						<input type="file" id="profile-file" name="Фото" class="input-hidden" />
+						<label for="profile-file" class="btn-s s-profile__img-btn">Выберите файл</label>
+						<div class="s-profile__nav-bottom">
+							<button class="btn-s s-profile__btn">Оставить заявку</button>
+							<p class="form-policy">
+								Нажимая на кнопку «Отправить», даю согласие на
+								<a href="#" target="_blank">обработку персональных данных</a> в
+								рамках
+								<a href="#">политики конфиденциальности</a>
+							</p>
+						</div>
+					</div>
+					<img src="img/profile.jpg" alt="image" class="s-profile__img">
+				</div>
+			</form>
+		</div>
+	</div>
+</section>

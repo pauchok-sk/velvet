@@ -8,10 +8,10 @@
 	<link rel="shortcut icon" href="favicon.ico" />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&_v=20250616155314" rel="stylesheet" />
-	<link rel="stylesheet" href="css/style.min.css?_v=20250616155314" />
-	<link rel="stylesheet" href="./files/css/fancybox.min.css?_v=20250616155314">
-	<link rel="stylesheet" href="./files/css/swiper.min.css?_v=20250616155314">
+	<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&_v=20250616233942" rel="stylesheet" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20250616233942" />
+	<link rel="stylesheet" href="./files/css/fancybox.min.css?_v=20250616233942">
+	<link rel="stylesheet" href="./files/css/swiper.min.css?_v=20250616233942">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
@@ -202,12 +202,12 @@
 						Мы никогда не пишем первыми — оставляя номер в этой форме, вы сами
 						инициируете первое сообщение.
 					</p>
-					<form action="#" class="s-connect__form">
+					<form action="#" class="s-connect__form" id="connect-form">
 						<div class="input-control">
-							<input type="text" placeholder="Имя" class="input" />
+							<input type="text" name="Имя" placeholder="Имя" class="input" id="connect-name" />
 						</div>
 						<div class="input-control">
-							<input type="tel" placeholder="+7 (___) ___-__-__" class="input" />
+							<input type="tel" name="Телефон" placeholder="+7 (___) ___-__-__" class="input" id="connect-tel" />
 						</div>
 						<button class="btn-s form-btn">Напишите мне в WhatsApp</button>
 					</form>
@@ -330,12 +330,12 @@
 	</main>
 	<div class="modal" id="modal-order">
 		<h3 class="modal__title">Заказать эскорт</h3>
-		<form action="#" class="modal__form">
+		<form action="#" class="modal__form" id="order-form">
 			<div class="input-control">
-				<input type="text" placeholder="Имя" class="input-outline" />
+				<input type="text" placeholder="Имя" id="order-name" class="input-outline" />
 			</div>
 			<div class="input-control">
-				<input type="tel" placeholder="+7 (___) ___-__-__" class="input-outline" />
+				<input type="tel" id="order-tel" placeholder="+7 (___) ___-__-__" class="input-outline" />
 			</div>
 			<button class="btn-s form-btn">Отправить</button>
 		</form>
@@ -429,11 +429,12 @@
 		</div>
 	</footer>
 
-	<script src="./files/js/inputmask.min.js?_v=20250616155314"></script>
-	<script src="./files/js/fancybox.min.js?_v=20250616155314"></script>
-	<script src="./files/js/swiper.min.js?_v=20250616155314"></script>
+	<script src="./files/js/inputmask.min.js?_v=20250616233942"></script>
+	<script src="./files/js/fancybox.min.js?_v=20250616233942"></script>
+	<script src="./files/js/swiper.min.js?_v=20250616233942"></script>
+	<script src="./files/js/justvalidate.min.js?_v=20250616233942"></script>
 
-	<script src="js/app.min.js?_v=20250616155314"></script>
+	<script src="js/app.min.js?_v=20250616233942"></script>
 </body>
 
 </html>

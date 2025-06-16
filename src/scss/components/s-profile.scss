@@ -1,0 +1,83 @@
+.s-profile {
+  &__body {
+    border-radius: 16px;
+    padding: 32px 40px;
+    background-color: var(--black);
+    box-shadow: 0 2px 9px 1px rgba(0, 0, 0, 0.1);
+    color: white;
+
+    @include tablet {
+      padding: 32px 20px;
+    }
+  }
+  &__form {
+  }
+  &__form-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 117%;
+    font-family: "Lora", sans-serif;
+    margin: 0px 0px 24px 0px;
+  }
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    row-gap: 16px;
+    @include tablet {
+      grid-template-columns: 1fr;
+    }
+
+    .input-control {
+      margin: 0 !important;
+    }
+  }
+  &__footer {
+    margin-top: 32px;
+    display: flex;
+    gap: 32px;
+    @include laptop-min {
+      flex-wrap: wrap;
+    }
+  }
+  &__nav {
+    flex: 1;
+
+    @include laptop-min {
+      flex: none;
+      width: 100%;
+    }
+
+    .form-policy {
+      font-weight: 400;
+    }
+  }
+  &__img-btn {
+    padding: 11px 31px !important;
+    font-weight: 500 !important;
+    font-size: 15px !important;
+    line-height: 133% !important;
+  }
+  &__nav-bottom {
+    margin-top: 24px;
+    padding-top: 24px;
+    border-top: 1px solid var(--gray);
+  }
+  &__btn {
+    width: 350px !important;
+  }
+  &__img {
+    display: block;
+    width: calc(50% - 16px);
+    height: 300px;
+    border-radius: 4px;
+    object-fit: cover;
+    @include laptop-min {
+      width: 400px;
+      margin: 0 auto;
+    }
+    @include mobile {
+      height: 200px;
+    }
+  }
+}

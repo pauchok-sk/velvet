@@ -148,6 +148,7 @@ template {
 }
 :root {
   --black: #111;
+  --gray: #bbb;
   --primary: #9e2220;
   --primary-dark: #6c0f0e
 }
@@ -372,6 +373,33 @@ body {
 .input::placeholder {
   color: #fff
 }
+.input._white {
+  background-color: #fff;
+  border: 1px solid rgba(48,48,48,.3);
+  color: var(--black)
+}
+.input._white::-webkit-input-placeholder {
+  color: rgba(0,0,0,.4)
+}
+.input._white:-ms-input-placeholder {
+  color: rgba(0,0,0,.4)
+}
+.input._white::-ms-input-placeholder {
+  color: rgba(0,0,0,.4)
+}
+.input._white::placeholder {
+  color: rgba(0,0,0,.4)
+}
+.input.just-validate-error-field {
+  border: 1px solid var(--primary)!important
+}
+.just-validate-error-label {
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  margin-top: 8px
+}
 .input-outline {
   padding: 14px 20px;
   border: none;
@@ -383,6 +411,9 @@ body {
   font-size: 16px;
   line-height: 125%;
   color: var(--black)
+}
+.input-outline.just-validate-error-field {
+  border: 1px solid var(--primary)!important
 }
 .form-btn {
   width: 100%;
@@ -397,6 +428,9 @@ body {
 }
 .form-policy a {
   text-decoration: underline
+}
+.input-hidden {
+  display: none
 }
 .card-model {
   background-color: #fff;
@@ -1253,6 +1287,62 @@ body {
   font-family: Lora,sans-serif;
   margin: 12px 0 0 0
 }
+.s-profile__body {
+  border-radius: 16px;
+  padding: 32px 40px;
+  background-color: var(--black);
+  box-shadow: 0 2px 9px 1px rgba(0,0,0,.1);
+  color: #fff
+}
+.s-profile__form-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 117%;
+  font-family: Lora,sans-serif;
+  margin: 0 0 24px 0
+}
+.s-profile__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 30px;
+  row-gap: 16px
+}
+.s-profile__wrapper .input-control {
+  margin: 0!important
+}
+.s-profile__footer {
+  margin-top: 32px;
+  display: flex;
+  gap: 32px
+}
+.s-profile__nav {
+  flex: 1
+}
+.s-profile__nav .form-policy {
+  font-weight: 400
+}
+.s-profile__img-btn {
+  padding: 11px 31px!important;
+  font-weight: 500!important;
+  font-size: 15px!important;
+  line-height: 133%!important
+}
+.s-profile__nav-bottom {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid var(--gray)
+}
+.s-profile__btn {
+  width: 350px!important
+}
+.s-profile__img {
+  display: block;
+  width: calc(50% - 16px);
+  height: 300px;
+  border-radius: 4px;
+  -o-object-fit: cover;
+  object-fit: cover
+}
 .footer {
   padding: 56px 0
 }
@@ -1519,6 +1609,17 @@ body {
     flex: none;
     width: 100%
   }
+  .s-profile__footer {
+    flex-wrap: wrap
+  }
+  .s-profile__nav {
+    flex: none;
+    width: 100%
+  }
+  .s-profile__img {
+    width: 400px;
+    margin: 0 auto
+  }
 }
 @media (max-width:767px) {
   .content {
@@ -1587,6 +1688,12 @@ body {
   }
   .s-faq__item-title {
     font-size: 20px
+  }
+  .s-profile__body {
+    padding: 32px 20px
+  }
+  .s-profile__wrapper {
+    grid-template-columns: 1fr
   }
   .footer__head-btn {
     display: flex
@@ -1666,6 +1773,9 @@ body {
     width: 100%;
     height: auto;
     aspect-ratio: 1/1
+  }
+  .s-profile__img {
+    height: 200px
   }
   .footer__list {
     flex-direction: column

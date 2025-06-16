@@ -23,6 +23,26 @@
   &::placeholder {
     color: white;
   }
+
+  &._white {
+    background-color: white;
+    border: 1px solid rgba(48, 48, 48, 0.3);
+    color: var(--black);
+
+    &::placeholder {
+      color: rgba(0, 0, 0, 0.4);
+    }
+  }
+  &.just-validate-error-field {
+    border: 1px solid var(--primary) !important;
+  }
+}
+.just-validate-error-label {
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  margin-top: 8px;
 }
 .input-outline {
   padding: 14px 20px;
@@ -36,6 +56,10 @@
   font-size: 16px;
   line-height: 125%;
   color: var(--black);
+
+  &.just-validate-error-field {
+    border: 1px solid var(--primary) !important;
+  }
 }
 .form-btn {
   width: 100%;
@@ -55,4 +79,8 @@
       text-decoration: none;
     }
   }
+}
+
+.input-hidden {
+  display: none;
 }

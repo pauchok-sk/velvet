@@ -36,6 +36,13 @@
             updateHeightBurger();
         }
     }
+    function fileChange() {
+        const profileFile = document.querySelector("#profile-file");
+        if (profileFile) profileFile.addEventListener("change", (e => {
+            const label = document.querySelector("[for='profile-file']");
+            if (e.target.files[0]) label.textContent = "Файл выбран";
+        }));
+    }
     function headerMobLocation() {
         const btn = document.querySelector("#header-mob-location-btn");
         const item = document.querySelector("#header-mob-location");
@@ -311,6 +318,41 @@
             if (target.hidden) return _slideDown(target, duration); else return _slideUp(target, duration);
         };
     }
+    function validateForms() {
+        if (document.querySelector("#profile-form")) {
+            const profileValidator = new JustValidate("#profile-form");
+            profileValidator.addField("#profile-name", [ {
+                rule: "required",
+                errorMessage: "Обязательное поле"
+            } ]).addField("#profile-age", [ {
+                rule: "required",
+                errorMessage: "Обязательное поле"
+            } ]).addField("#profile-tel", [ {
+                rule: "required",
+                errorMessage: "Обязательное поле"
+            } ]);
+        }
+        if (document.querySelector("#connect-form")) {
+            const connectValidator = new JustValidate("#connect-form");
+            connectValidator.addField("#connect-name", [ {
+                rule: "required",
+                errorMessage: "Обязательное поле"
+            } ]).addField("#connect-tel", [ {
+                rule: "required",
+                errorMessage: "Обязательное поле"
+            } ]);
+        }
+        if (document.querySelector("#order-form")) {
+            const orderValidator = new JustValidate("#order-form");
+            orderValidator.addField("#order-name", [ {
+                rule: "required",
+                errorMessage: "Обязательное поле"
+            } ]).addField("#order-tel", [ {
+                rule: "required",
+                errorMessage: "Обязательное поле"
+            } ]);
+        }
+    }
     spoller();
     headerMobLocation();
     showTel();
@@ -319,5 +361,7 @@
     sliders();
     headerScroll();
     map();
+    fileChange();
+    validateForms();
     Fancybox.bind("[data-fancybox]", {});
 })();
