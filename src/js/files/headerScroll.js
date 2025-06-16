@@ -8,7 +8,6 @@ export default function headerScroll() {
 
     window.addEventListener("scroll", () => {
       let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      console.log(scrollTop)
 
       if (scrollTop < height) {
         header.classList.remove("_shadow");

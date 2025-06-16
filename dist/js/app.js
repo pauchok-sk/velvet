@@ -49,7 +49,6 @@
             let lastScrollTop = 0;
             window.addEventListener("scroll", (() => {
                 let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-                console.log(scrollTop);
                 if (scrollTop < height) {
                     header.classList.remove("_shadow");
                     return;
@@ -69,6 +68,30 @@
         const inputs = document.querySelectorAll('input[type="tel"]');
         const im = new Inputmask("+7 (999) 999-99-99");
         im.mask(inputs);
+    }
+    function map() {
+        const contactsMap = document.querySelector("#map");
+        if (contactsMap) {
+            function init() {
+                const center = JSON.parse(contactsMap.dataset.center);
+                const zoom = Number(contactsMap.dataset.zoom);
+                const map = new ymaps.Map("map", {
+                    center,
+                    zoom
+                });
+                const placemark = new ymaps.Placemark(center, {}, {});
+                map.controls.remove("geolocationControl");
+                map.controls.remove("searchControl");
+                map.controls.remove("trafficControl");
+                map.controls.remove("typeSelector");
+                map.controls.remove("fullscreenControl");
+                map.controls.remove("zoomControl");
+                map.controls.remove("rulerControl");
+                map.behaviors.disable([ "scrollZoom" ]);
+                map.geoObjects.add(placemark);
+            }
+            ymaps.ready(init);
+        }
     }
     function showTel() {
         const tels = document.querySelectorAll(".show-tel");
@@ -295,5 +318,6 @@
     inputmask();
     sliders();
     headerScroll();
+    map();
     Fancybox.bind("[data-fancybox]", {});
 })();

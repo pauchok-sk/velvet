@@ -1,0 +1,42 @@
+.s-about-main {
+  &__item {
+    @include flex-between;
+    gap: 32px;
+
+    &:not(:last-child) {
+      margin-bottom: 56px;
+    }
+
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+    @include laptop-min {
+      flex-direction: column !important;
+    }
+  }
+  &__img {
+    display: block;
+    width: 480px;
+    height: 400px;
+    object-fit: cover;
+    @include mobile {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1/1;
+    }
+  }
+  &__item-body {
+    flex: 0 1 580px;
+    @include laptop-min {
+      flex: none;
+      width: 100%;
+    }
+  }
+  &__item-title {
+    margin-bottom: 32px;
+  }
+  &__item-btn {
+    margin-top: 40px;
+    width: 280px;
+  }
+}
