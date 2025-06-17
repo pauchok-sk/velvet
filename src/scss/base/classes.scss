@@ -37,10 +37,32 @@
 
   .s-title {
     margin: 0 !important;
-    flex: 1; 
+    flex: 1;
   }
   .content {
     margin: 0;
     flex: 1;
+  }
+  &._col {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+    .s-title {
+      flex: none;
+      width: 100%;
+    }
+    .content {
+      flex: none;
+      width: 100%;
+      max-width: 970px;
+
+      font-size: 20px;
+      line-height: 120%;
+      @include tablet {
+        font-size: 15px;
+        line-height: 147%;
+      }
+    }
   }
 }
