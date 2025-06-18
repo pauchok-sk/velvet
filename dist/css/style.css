@@ -239,6 +239,21 @@ body {
   font-size: 20px;
   line-height: 120%
 }
+.sect-head._col-start {
+  flex-direction: column;
+  gap: 20px
+}
+.sect-head._col-start .s-title {
+  flex: none;
+  width: 100%
+}
+.sect-head._col-start .content {
+  flex: none;
+  width: 100%;
+  max-width: none;
+  font-size: 20px;
+  line-height: 120%
+}
 .btn-clear {
   cursor: pointer;
   background-color: rgba(0,0,0,0);
@@ -1059,6 +1074,9 @@ body {
   font-size: 20px;
   line-height: 140%
 }
+.s-key__content._middle {
+  max-width: 645px
+}
 .s-key__content._max {
   max-width: 890px
 }
@@ -1475,6 +1493,52 @@ body {
   transition: transform .3s linear;
   transition: transform .3s linear,-webkit-transform .3s linear
 }
+.s-invite__container {
+  padding-bottom: 56px;
+  border-bottom: 1px solid var(--black)
+}
+.s-invite__grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px
+}
+.s-invite__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  border-radius: 4px;
+  overflow: hidden;
+  aspect-ratio: 1/1;
+  padding: 24px;
+  color: #fff
+}
+.s-invite__item-info {
+  padding: 12px 24px;
+  backdrop-filter: blur(3px);
+  border-radius: 4px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: linear-gradient(134deg,rgba(255,255,255,.3) 0,rgba(255,255,255,.5) 100%),rgba(0,0,0,.3)
+}
+.s-invite__item-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
+  margin-bottom: 8px
+}
+.s-invite__item-price {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%
+}
+.s-invite__bottom-content {
+  max-width: 625px;
+  margin: 40px auto 0 auto;
+  font-size: 20px;
+  line-height: 140%;
+  text-align: center
+}
 .footer {
   padding: 56px 0
 }
@@ -1799,6 +1863,9 @@ body {
   .s-model-gallery__grid {
     grid-template-columns: repeat(2,1fr)
   }
+  .s-invite__grid {
+    grid-template-columns: repeat(2,1fr)
+  }
 }
 @media (max-width:767px) {
   .content {
@@ -1810,6 +1877,10 @@ body {
     gap: 24px
   }
   .sect-head._col .content {
+    font-size: 15px;
+    line-height: 147%
+  }
+  .sect-head._col-start .content {
     font-size: 15px;
     line-height: 147%
   }
@@ -1895,6 +1966,14 @@ body {
   .s-model__list {
     row-gap: 8px
   }
+  .s-invite__item {
+    padding: 16px
+  }
+  .s-invite__bottom-content {
+    font-size: 15px;
+    line-height: 147%;
+    margin-top: 30px
+  }
   .footer__head-btn {
     display: flex
   }
@@ -1940,6 +2019,9 @@ body {
     margin: 0
   }
   .s-model-gallery__grid {
+    grid-template-columns: 1fr
+  }
+  .s-invite__grid {
     grid-template-columns: 1fr
   }
 }

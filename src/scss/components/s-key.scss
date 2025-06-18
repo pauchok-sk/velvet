@@ -8,6 +8,9 @@
     font-size: 20px;
     line-height: 140%;
 
+    &._middle {
+      max-width: 645px;
+    }
     &._max {
       max-width: 890px;
     }

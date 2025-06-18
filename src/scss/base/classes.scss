@@ -65,4 +65,25 @@
       }
     }
   }
+  &._col-start {
+    flex-direction: column;
+    gap: 20px;
+
+    .s-title {
+      flex: none;
+      width: 100%;
+    }
+    .content {
+      flex: none;
+      width: 100%;
+      max-width: none;
+
+      font-size: 20px;
+      line-height: 120%;
+      @include tablet {
+        font-size: 15px;
+        line-height: 147%;
+      }
+    }
+  }
 }
